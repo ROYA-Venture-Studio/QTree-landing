@@ -50,8 +50,11 @@
       </div>
 
       <!-- Decorative Dividers - Hidden on mobile -->
-      <div class="hidden md:flex items-center justify-center pb-[26.25px] pt-2">
-        <img src="/margin.svg" alt="" class="w-16 h-[72.95px]" aria-hidden="true" />
+      <div class="hidden md:flex items-center justify-center gap-5 pb-[26.25px] pt-2">
+        <div class="w-[2px] h-[54px] bg-[#0C1B33] audio-bar bar-1 shrink-0"></div>
+        <div class="w-[2px] h-[54px] bg-[#0C1B33] audio-bar bar-2 shrink-0"></div>
+        <div class="w-[2px] h-[54px] bg-[#0C1B33] audio-bar bar-3 shrink-0"></div>
+        <div class="w-[2px] h-[54px] bg-[#0C1B33] audio-bar bar-4 shrink-0"></div>
       </div>
 
       <!-- Email Link -->
@@ -90,3 +93,37 @@
     </div>
   </div>
 </section>
+
+<style>
+  .audio-bar {
+    animation: pulse-bar 2.5s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  @keyframes pulse-bar {
+    0%, 100% {
+      transform: scaleY(0.5);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  .bar-1 {
+    animation-delay: 0s;
+  }
+
+  .bar-2 {
+    animation-delay: 0.15s;
+  }
+
+  .bar-3 {
+    animation-delay: 0.3s;
+  }
+
+  .bar-4 {
+    animation-delay: 0.45s;
+  }
+</style>

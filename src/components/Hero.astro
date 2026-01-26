@@ -1,0 +1,92 @@
+---
+// Hero section with main heading and coming soon badge
+---
+
+<section class="relative min-h-screen bg-[#0c1b33] flex items-center justify-center overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <!-- Left blur effect -->
+    <div class="absolute -left-[141px] md:-left-[141px] -left-[70px] top-1/2 -translate-y-1/2 size-[300px] md:size-[534px] rounded-full bg-[#b2aa8e] opacity-60 blur-[125px]"></div>
+    
+    <!-- Right blur effect -->
+    <div class="absolute -right-[150px] md:-right-[291px] top-[60%] md:top-[472.5px] size-[300px] md:size-[534px] rounded-full bg-[#b2aa8e] opacity-60 blur-[125px]"></div>
+    
+    <!-- Video background -->
+    <div class="absolute inset-0 px-4 md:px-8 py-16 md:py-[108px]">
+      <div class="relative w-full h-full overflow-hidden">
+        <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline
+          class="absolute inset-0 w-full h-full object-cover opacity-60"
+        >
+          <source src="/video/background.mp4" type="video/mp4" />
+          <source src="/video/background.webm" type="video/webm" />
+          <!-- Fallback for browsers that don't support video -->
+          <div class="size-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 animate-pulse"></div>
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="relative z-10 flex flex-col items-center justify-center w-full max-w-[90vw] xl:max-w-[1368px] px-4 md:px-[52.5px] py-[60px] md:py-[120px] mx-auto">
+    <div class="flex flex-col items-center justify-center w-full space-y-4 md:space-y-6">
+      <!-- Main Heading -->
+      <div class="flex flex-col items-center justify-center mb-3 md:mb-5">
+        <h1 class="text-white text-3xl md:text-[50px] leading-tight md:leading-[48.75px] tracking-tight md:tracking-[-1.22px] text-center font-normal px-4">
+          Every Experience Begins With a Feeling
+        </h1>
+      </div>
+
+      <!-- Coming Soon Badge -->
+      <div class="flex items-center justify-center gap-2 md:gap-[11.25px] pb-3 md:pb-5">
+        <div class="size-[6px] md:size-[7.5px] rounded-full bg-[#a9dfff] shrink-0"></div>
+        <div class="text-[#a9dfff] text-lg md:text-xl font-normal leading-normal">
+          Coming Soon
+        </div>
+        <div class="size-[6px] md:size-[7.5px] rounded-full bg-[#a9dfff] shrink-0"></div>
+      </div>
+
+      <!-- Decorative Dividers - Hidden on mobile -->
+      <div class="hidden md:flex items-center justify-center pb-[26.25px] pt-2">
+        <img src="/margin.svg" alt="" class="w-16 h-[72.95px]" aria-hidden="true" />
+      </div>
+
+      <!-- Email Link -->
+      <div class="flex items-center justify-center pb-3 md:pb-5 pt-2 md:pt-[0.7px]">
+        <a href="mailto:info@q-tree.com" class="flex items-center justify-center gap-2 md:gap-[7.5px] hover:opacity-80 transition-opacity">
+          <div class="h-[16px] md:h-[18.75px] w-[14px] md:w-[17.25px] shrink-0">
+            <img src="/icons/email.svg" alt="Email" class="block max-w-none size-full" />
+          </div>
+          <span class="text-[#e6e6e6] text-xs md:text-[12.1px] leading-normal underline decoration-solid">
+            info@q-tree.com
+          </span>
+        </a>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="flex items-center justify-center gap-2 md:gap-[7.5px] pt-2 md:pt-[0.7px]">
+        <a href="#" aria-label="TikTok" class="size-[40px] md:size-[36px] rounded-full border border-[#e6e6e6] border-solid flex items-center justify-center hover:bg-[#e6e6e6]/10 transition-colors">
+          <img src="/icons/tiktok.svg" alt="TikTok" class="size-[14px]" />
+        </a>
+        <a href="#" aria-label="Instagram" class="size-[40px] md:size-[36px] rounded-full border border-[#e6e6e6] border-solid flex items-center justify-center hover:bg-[#e6e6e6]/10 transition-colors">
+          <img src="/icons/instagram.svg" alt="Instagram" class="size-[14px]" />
+        </a>
+        <a href="#" aria-label="Twitter/X" class="size-[40px] md:size-[36px] rounded-full border border-[#e6e6e6] border-solid flex items-center justify-center hover:bg-[#e6e6e6]/10 transition-colors">
+          <img src="/icons/twitter.svg" alt="Twitter/X" class="size-[14px]" />
+        </a>
+        <a href="#" aria-label="Facebook" class="size-[40px] md:size-[36px] rounded-full border border-[#e6e6e6] border-solid flex items-center justify-center hover:bg-[#e6e6e6]/10 transition-colors">
+          <img src="/icons/facebook.svg" alt="Facebook" class="w-[14px] h-[18px]" />
+        </a>
+        <a href="#" aria-label="YouTube" class="size-[40px] md:size-[36px] rounded-full border border-[#e6e6e6] border-solid flex items-center justify-center hover:bg-[#e6e6e6]/10 transition-colors">
+          <img src="/icons/youtube.svg" alt="YouTube" class="w-[20px] h-[14px]" />
+        </a>
+        <a href="#" aria-label="LinkedIn" class="size-[40px] md:size-[36px] rounded-full border border-[#e6e6e6] border-solid flex items-center justify-center hover:bg-[#e6e6e6]/10 transition-colors">
+          <img src="/icons/linkedin.svg" alt="LinkedIn" class="size-[14px]" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

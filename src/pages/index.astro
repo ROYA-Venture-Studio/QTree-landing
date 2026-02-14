@@ -1,10 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
+import HeroSection from '../components/HeroSection.astro';
+import OwnershipSection from '../components/OwnershipSection.astro';
+import DivisionsSection from '../components/DivisionsSection.astro';
+import CompaniesSection from '../components/CompaniesSection.astro';
+import OperatingModelSection from '../components/OperatingModelSection.astro';
+import ContactFooter from '../components/ContactFooter.astro';
 ---
 
-<Layout title="QTree Holding - Coming Soon">
-	<Header />
-	<Hero />
+<Layout title="QTree Holdings – Building businesses designed to last">
+	<main class="flex flex-col items-center w-full max-w-[1440px] mx-auto py-3">
+		<HeroSection />
+		<OwnershipSection />
+		<DivisionsSection />
+		<CompaniesSection />
+		<OperatingModelSection />
+		<ContactFooter />
+	</main>
 </Layout>

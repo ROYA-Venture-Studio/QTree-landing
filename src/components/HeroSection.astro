@@ -1,0 +1,59 @@
+---
+---
+<section class="w-full px-[8px] md:px-[14.4px]">
+  <div class="relative w-full min-h-[624px] md:min-h-[810px] rounded-[18px] overflow-hidden flex flex-col">
+    <!-- Video Background -->
+    <div class="absolute inset-0 overflow-hidden rounded-[18px]">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/video/background.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[rgba(12,27,51,0.4)] to-[rgba(138,191,255,0.2)] rounded-[18px]"></div>
+
+    <!-- Navigation (inside hero) -->
+    <nav class="relative z-20 w-full">
+      <div class="flex items-center justify-between max-w-[1440px] mx-auto px-4 md:px-9 py-8">
+        <a href="/" class="shrink-0">
+          <img src="/images/logo-nav.svg" alt="QTree Holding" class="h-[42px]" style="aspect-ratio: 88.41/42;" />
+        </a>
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="border border-offwhite rounded-[4px] px-10 py-3 text-white font-inter-tight font-medium text-[15.5px] leading-4 text-center min-w-[160px] hover:bg-white hover:text-navy transition-colors">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="relative z-10 flex-1 flex flex-col justify-end pb-8 px-4 md:px-10">
+      <div class="max-w-[1380px] mx-auto w-full">
+        <div class="flex flex-wrap lg:flex-nowrap items-end justify-between gap-6 md:gap-8">
+          <!-- Heading -->
+          <div class="w-full lg:max-w-[765px] px-5">
+            <h1 class="font-funnel font-medium text-offwhite text-[43px] md:text-[60px] lg:text-[72px] leading-[48px] md:leading-[68px] lg:leading-[80px]">
+              Building businesses designed to last
+            </h1>
+          </div>
+          <!-- Overlay Card -->
+          <div class="w-full lg:max-w-[305px] pt-8 px-5">
+            <div class="backdrop-blur-[2.5px] bg-white/20 rounded-[4px] p-4 flex flex-col gap-3">
+              <div class="pb-[7px]">
+                <img src="/images/hero-tree.svg" alt="" class="w-12 h-6" />
+              </div>
+              <p class="font-funnel font-medium text-offwhite text-[13.3px] leading-[19.6px]">
+                We take a long-term approach to ownership, supporting independent companies that deliver real-world impact through disciplined execution and thoughtful growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

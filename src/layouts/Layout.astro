@@ -6,7 +6,7 @@ interface Props {
 	description?: string;
 }
 
-const { title, description = "QTree Holding - Every Experience Begins With a Feeling" } = Astro.props;
+const { title, description = "QTree Holdings – Building businesses designed to last" } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,9 +17,12 @@ const { title, description = "QTree Holding - Every Experience Begins With a Fee
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 		<title>{title}</title>
 	</head>
-	<body class="antialiased">
+	<body class="antialiased bg-[#f7f3eb] text-[#0b1f41]">
 		<slot />
 	</body>
 </html>
